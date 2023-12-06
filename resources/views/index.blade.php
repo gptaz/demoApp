@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -96,10 +95,9 @@
 			</div>
 			<div class="w3ls_logo_products_left1">
 				<ul class="special_items">
-					<li><a href="#">Events</a><i>/</i></li>
-					<li><a href="#">About Us</a><i>/</i></li>
-					<li><a href="#">Best Deals</a><i>/</i></li>
-					<li><a href="#">Services</a></li>
+					<li><a href="{{route('home')}}">Home</a><i>/</i></li>
+					<li><a href="#">Admin Page</a></li>
+					
 				</ul>
 			</div>
 			<div class="w3ls_logo_products_left1">
@@ -128,25 +126,21 @@
 			   <!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 					<ul class="nav navbar-nav nav_1">
-						<li><a href="#">Category 1</a></li>
-						<li><a href="#">Category 2</a></li>
+						<li><a href="{{route('products')}}">Category 1</a></li>
+						<li><a href="{{route('products')}}">Category 2</a></li>
 						<li class="dropdown mega-dropdown active">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Category 3<span class="caret"></span></a>				
 							<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">
 								<div class="w3ls_vegetables">
 									<ul>	
-										<li><a href="vegetables.html">Category 4</a></li>
-										<li><a href="vegetables.html">Category 5</a></li>
+										<li><a href="{{route('products')}}">Category 4</a></li>
+										<li><a href="{{route('products')}}">Category 5</a></li>
 									</ul>
 								</div>                  
 							</div>				
 						</li>
-						<li><a href="kitchen.html">Category 6</a></li>
-						<li><a href="short-codes.html">Category 7</a></li>
-						
-						
-						
-						
+						<li><a href="{{route('products')}}">Category 6</a></li>
+						<li><a href="{{route('products')}}">Category 7</a></li>	
 					</ul>
 				 </div><!-- /.navbar-collapse -->
 			</nav>
@@ -159,7 +153,7 @@
 							<div class="w3l_banner_nav_right_banner">
 								<h3>Make your <span>food</span> with Spicy.</h3>
 								<div class="more">
-									<a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
+									<a href="{{route('products')}}" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
 								</div>
 							</div>
 						</li>
@@ -167,7 +161,7 @@
 							<div class="w3l_banner_nav_right_banner1">
 								<h3>Make your <span>food</span> with Spicy.</h3>
 								<div class="more">
-									<a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
+									<a href="{{route('products')}}" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
 								</div>
 							</div>
 						</li>
@@ -175,7 +169,7 @@
 							<div class="w3l_banner_nav_right_banner2">
 								<h3>upto <i>50%</i> off.</h3>
 								<div class="more">
-									<a href="products.html" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
+									<a href="{{route('products')}}" class="button--saqui button--round-l button--text-thick" data-text="Shop now">Shop now</a>
 								</div>
 							</div>
 						</li>
@@ -213,12 +207,12 @@
 								<figure>
 									<div class="snipcart-item block" >
 										<div class="snipcart-thumb">
-											<a href="single.html"><img title=" " alt=" " src="images/1.png" /></a>		
+											<a href="{{route('item')}}"><img title=" " alt=" " src="images/1.png" /></a>		
 											<p>fortune sunflower oil</p>
 											<h4>$7.99 <span>$10.00</span></h4>
 										</div>
 										<div class="snipcart-details top_brand_home_details">
-											<form action="checkout.html" method="post">
+											<form action="#" method="post">
 												<fieldset>
 													<input type="hidden" name="cmd" value="_cart" />
 													<input type="hidden" name="add" value="1" />
@@ -248,7 +242,7 @@
 								<figure>
 									<div class="snipcart-item block" >
 										<div class="snipcart-thumb">
-											<a href="single.html"><img title=" " alt=" " src="images/3.png" /></a>		
+											<a href="{{route('item')}}"><img title=" " alt=" " src="images/3.png" /></a>		
 											<p>basmati rise (5 Kg)</p>
 											<h4>$11.99 <span>$15.00</span></h4>
 										</div>
@@ -284,7 +278,7 @@
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/2.png" alt=" " class="img-responsive" /></a>
+											<a href="{{route('item')}}"><img src="images/2.png" alt=" " class="img-responsive" /></a>
 											<p>Pepsi soft drink (2 Ltr)</p>
 											<h4>$8.00 <span>$10.00</span></h4>
 										</div>
@@ -320,7 +314,7 @@
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/4.png" alt=" " class="img-responsive" /></a>
+											<a href="{{route('item')}}"><img src="images/4.png" alt=" " class="img-responsive" /></a>
 											<p>dogs food (4 Kg)</p>
 											<h4>$9.00 <span>$11.00</span></h4>
 										</div>
@@ -356,61 +350,98 @@
 		<div class="container">
 			<h3>Top Products</h3>
 			<div class="agile_top_brands_grids">
-				<div class="col-md-3 top_brand_left">
-					<div class="hover14 column">
-						<div class="agile_top_brand_left_grid">
+			<div class="col-md-3 w3ls_w3l_banner_left">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+								<img src="images/offer.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a href="{{route('item')}}"><img src="images/13.png" alt=" " class="img-responsive" /></a>
+											<p>mixed fruit juice (1 ltr)</p>
+											<h4>$3.00 <span>$4.00</span></h4>
+										</div>
+										<div class="snipcart-details">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" />
+													<input type="hidden" name="business" value=" " />
+													<input type="hidden" name="item_name" value="mixed fruit juice" />
+													<input type="hidden" name="amount" value="3.00" />
+													<input type="hidden" name="discount_amount" value="1.00" />
+													<input type="hidden" name="currency_code" value="USD" />
+													<input type="hidden" name="return" value=" " />
+													<input type="hidden" name="cancel_return" value=" " />
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-3 w3ls_w3l_banner_left">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
+							<div class="agile_top_brand_left_grid_pos">
+								<img src="images/offer.png" alt=" " class="img-responsive" />
+							</div>
+							<div class="agile_top_brand_left_grid1">
+								<figure>
+									<div class="snipcart-item block">
+										<div class="snipcart-thumb">
+											<a href="{{route('item')}}"><img src="images/14.png" alt=" " class="img-responsive" /></a>
+											<p>prune juice - sunsweet (1 ltr)</p>
+											<h4>$4.00 <span>$5.00</span></h4>
+										</div>
+										<div class="snipcart-details">
+											<form action="#" method="post">
+												<fieldset>
+													<input type="hidden" name="cmd" value="_cart" />
+													<input type="hidden" name="add" value="1" />
+													<input type="hidden" name="business" value=" " />
+													<input type="hidden" name="item_name" value="prune juice" />
+													<input type="hidden" name="amount" value="4.00" />
+													<input type="hidden" name="discount_amount" value="1.00" />
+													<input type="hidden" name="currency_code" value="USD" />
+													<input type="hidden" name="return" value=" " />
+													<input type="hidden" name="cancel_return" value=" " />
+													<input type="submit" name="submit" value="Add to cart" class="button" />
+												</fieldset>
+											</form>
+										</div>
+									</div>
+								</figure>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="col-md-3 w3ls_w3l_banner_left">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
 							<div class="tag"><img src="images/tag.png" alt=" " class="img-responsive" /></div>
 							<div class="agile_top_brand_left_grid1">
 								<figure>
-									<div class="snipcart-item block" >
+									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="single.html"><img title=" " alt=" " src="images/1.png" /></a>		
-											<p>fortune sunflower oil</p>
-											<h4>$7.99 <span>$10.00</span></h4>
+											<a href="{{route('item')}}"><img src="images/15.png" alt=" " class="img-responsive" /></a>
+											<p>coco cola zero can (330 ml)</p>
+											<h4>$3.00 <span>$5.00</span></h4>
 										</div>
-										<div class="snipcart-details top_brand_home_details">
-											<form action="checkout.html" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="Fortune Sunflower Oil" />
-													<input type="hidden" name="amount" value="7.99" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-													
-											</form>
-									
-										</div>
-									</div>
-								</figure>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 top_brand_left">
-					<div class="hover14 column">
-						<div class="agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block" >
-										<div class="snipcart-thumb">
-											<a href="single.html"><img title=" " alt=" " src="images/3.png" /></a>		
-											<p>basmati rise (5 Kg)</p>
-											<h4>$11.99 <span>$15.00</span></h4>
-										</div>
-										<div class="snipcart-details top_brand_home_details">
+										<div class="snipcart-details">
 											<form action="#" method="post">
 												<fieldset>
 													<input type="hidden" name="cmd" value="_cart" />
 													<input type="hidden" name="add" value="1" />
 													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="basmati rise" />
-													<input type="hidden" name="amount" value="11.99" />
+													<input type="hidden" name="item_name" value="coco cola can" />
+													<input type="hidden" name="amount" value="3.00" />
 													<input type="hidden" name="discount_amount" value="1.00" />
 													<input type="hidden" name="currency_code" value="USD" />
 													<input type="hidden" name="return" value=" " />
@@ -423,11 +454,11 @@
 								</figure>
 							</div>
 						</div>
+						</div>
 					</div>
-				</div>
-				<div class="col-md-3 top_brand_left">
-					<div class="hover14 column">
-						<div class="agile_top_brand_left_grid">
+					<div class="col-md-3 w3ls_w3l_banner_left">
+						<div class="hover14 column">
+						<div class="agile_top_brand_left_grid w3l_agile_top_brand_left_grid">
 							<div class="agile_top_brand_left_grid_pos">
 								<img src="images/offer.png" alt=" " class="img-responsive" />
 							</div>
@@ -435,18 +466,18 @@
 								<figure>
 									<div class="snipcart-item block">
 										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/2.png" alt=" " class="img-responsive" /></a>
-											<p>Pepsi soft drink (2 Ltr)</p>
-											<h4>$8.00 <span>$10.00</span></h4>
+											<a href="{{route('item')}}"><img src="images/16.png" alt=" " class="img-responsive" /></a>
+											<p>sprite bottle (2 ltr)</p>
+											<h4>$3.00 <span>$4.00</span></h4>
 										</div>
-										<div class="snipcart-details top_brand_home_details">
+										<div class="snipcart-details">
 											<form action="#" method="post">
 												<fieldset>
 													<input type="hidden" name="cmd" value="_cart" />
 													<input type="hidden" name="add" value="1" />
 													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="Pepsi soft drink" />
-													<input type="hidden" name="amount" value="8.00" />
+													<input type="hidden" name="item_name" value="sprite bottle" />
+													<input type="hidden" name="amount" value="3.00" />
 													<input type="hidden" name="discount_amount" value="1.00" />
 													<input type="hidden" name="currency_code" value="USD" />
 													<input type="hidden" name="return" value=" " />
@@ -459,44 +490,8 @@
 								</figure>
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-md-3 top_brand_left">
-					<div class="hover14 column">
-						<div class="agile_top_brand_left_grid">
-							<div class="agile_top_brand_left_grid_pos">
-								<img src="images/offer.png" alt=" " class="img-responsive" />
-							</div>
-							<div class="agile_top_brand_left_grid1">
-								<figure>
-									<div class="snipcart-item block">
-										<div class="snipcart-thumb">
-											<a href="single.html"><img src="images/4.png" alt=" " class="img-responsive" /></a>
-											<p>dogs food (4 Kg)</p>
-											<h4>$9.00 <span>$11.00</span></h4>
-										</div>
-										<div class="snipcart-details top_brand_home_details">
-											<form action="#" method="post">
-												<fieldset>
-													<input type="hidden" name="cmd" value="_cart" />
-													<input type="hidden" name="add" value="1" />
-													<input type="hidden" name="business" value=" " />
-													<input type="hidden" name="item_name" value="dogs food" />
-													<input type="hidden" name="amount" value="9.00" />
-													<input type="hidden" name="discount_amount" value="1.00" />
-													<input type="hidden" name="currency_code" value="USD" />
-													<input type="hidden" name="return" value=" " />
-													<input type="hidden" name="cancel_return" value=" " />
-													<input type="submit" name="submit" value="Add to cart" class="button" />
-												</fieldset>
-											</form>
-										</div>
-									</div>
-								</figure>
-							</div>
 						</div>
 					</div>
-				</div>
 				<div class="clearfix"> </div>
 			</div>
 		</div>
@@ -509,29 +504,29 @@
 			<div class="col-md-3 w3_footer_grid">
 				<h3>information</h3>
 				<ul class="w3_footer_grid_list">
-					<li><a href="events.html">Events</a></li>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="products.html">Best Deals</a></li>
-					<li><a href="services.html">Services</a></li>
-					<li><a href="short-codes.html">Short Codes</a></li>
+					<li><a href="#">Events</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="{{route('products')}}">Best Deals</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Short Codes</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3 w3_footer_grid">
 				<h3>policy info</h3>
 				<ul class="w3_footer_grid_list">
-					<li><a href="faqs.html">FAQ</a></li>
-					<li><a href="privacy.html">privacy policy</a></li>
-					<li><a href="privacy.html">terms of use</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">privacy policy</a></li>
+					<li><a href="#">terms of use</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3 w3_footer_grid">
 				<h3>what in stores</h3>
 				<ul class="w3_footer_grid_list">
-					<li><a href="pet.html">Category 1</a></li>
-					<li><a href="frozen.html">Category 2</a></li>
-					<li><a href="kitchen.html">Category 3</a></li>
-					<li><a href="products.html">Category 4</a></li>
-					<li><a href="household.html">Category 5</a></li>
+					<li><a href="#">Category 1</a></li>
+					<li><a href="#">Category 2</a></li>
+					<li><a href="#">Category 3</a></li>
+					<li><a href="{{route('products')}}">Category 4</a></li>
+					<li><a href="#">Category 5</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3 w3_footer_grid">
@@ -618,8 +613,8 @@ $(document).ready(function(){
 				total += items[i].get('quantity');
 			}
 
-			if (total < 3) {
-				alert('The minimum order quantity is 3. Please add more to your shopping cart before checking out');
+			if (total < 1) {
+				alert('The minimum order quantity is 1. Please add more to your shopping cart before checking out');
 				evt.preventDefault();
 			}
 		});
